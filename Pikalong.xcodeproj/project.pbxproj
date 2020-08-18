@@ -1,0 +1,880 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85C0C7CCF0C8C12301FA77AB /* Pods_PikalongTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5E1603D46DE9A701B6FEF3 /* Pods_PikalongTests.framework */; };
+		A6E2B224BF733F4B8B47D109 /* Pods_Pikalong_PikalongUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A079A3B17C39FA2ACA5297A4 /* Pods_Pikalong_PikalongUITests.framework */; };
+		BD08B2C03320982E0FB4B4D5 /* Pods_Pikalong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C624C68344A1A015061F14A8 /* Pods_Pikalong.framework */; };
+		FA2D361624EC2928005E0ADA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D361524EC2928005E0ADA /* R.generated.swift */; };
+		FAC1B31B24EB8504001D854A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1B31A24EB8504001D854A /* AppDelegate.swift */; };
+		FAC1B32424EB8506001D854A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC1B32324EB8506001D854A /* Assets.xcassets */; };
+		FAC1B32724EB8506001D854A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC1B32524EB8506001D854A /* LaunchScreen.storyboard */; };
+		FAC1B33224EB8507001D854A /* PikalongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1B33124EB8507001D854A /* PikalongTests.swift */; };
+		FAC1B33D24EB8507001D854A /* PikalongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1B33C24EB8507001D854A /* PikalongUITests.swift */; };
+		FAC1B35224EB8778001D854A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1B35024EB8778001D854A /* SplashViewController.swift */; };
+		FAC1B35324EB8778001D854A /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC1B35124EB8778001D854A /* SplashViewController.xib */; };
+		FAC1B35724EB87A2001D854A /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1B35524EB87A2001D854A /* TopViewController.swift */; };
+		FAC1B35824EB87A2001D854A /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC1B35624EB87A2001D854A /* TopViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAC1B32E24EB8507001D854A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC1B30F24EB8504001D854A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC1B31624EB8504001D854A;
+			remoteInfo = Pikalong;
+		};
+		FAC1B33924EB8507001D854A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC1B30F24EB8504001D854A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC1B31624EB8504001D854A;
+			remoteInfo = Pikalong;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B5E1603D46DE9A701B6FEF3 /* Pods_PikalongTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PikalongTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7C804FF6314154FD0F2A04 /* Pods-PikalongTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PikalongTests.debug.xcconfig"; path = "Target Support Files/Pods-PikalongTests/Pods-PikalongTests.debug.xcconfig"; sourceTree = "<group>"; };
+		85BA31417C875601D0214B5A /* Pods-Pikalong-PikalongUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikalong-PikalongUITests.debug.xcconfig"; path = "Target Support Files/Pods-Pikalong-PikalongUITests/Pods-Pikalong-PikalongUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8617A7C5DE3360AB297843D7 /* Pods-PikalongTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PikalongTests.release.xcconfig"; path = "Target Support Files/Pods-PikalongTests/Pods-PikalongTests.release.xcconfig"; sourceTree = "<group>"; };
+		A079A3B17C39FA2ACA5297A4 /* Pods_Pikalong_PikalongUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikalong_PikalongUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F8547C18927970870709D9 /* Pods-Pikalong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikalong.debug.xcconfig"; path = "Target Support Files/Pods-Pikalong/Pods-Pikalong.debug.xcconfig"; sourceTree = "<group>"; };
+		C624C68344A1A015061F14A8 /* Pods_Pikalong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikalong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB816A89BE77C28233E1453B /* Pods-Pikalong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikalong.release.xcconfig"; path = "Target Support Files/Pods-Pikalong/Pods-Pikalong.release.xcconfig"; sourceTree = "<group>"; };
+		FA2D361524EC2928005E0ADA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		FAC1B31724EB8504001D854A /* Pikalong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pikalong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC1B31A24EB8504001D854A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAC1B32324EB8506001D854A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAC1B32624EB8506001D854A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAC1B32824EB8507001D854A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC1B32D24EB8507001D854A /* PikalongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PikalongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC1B33124EB8507001D854A /* PikalongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikalongTests.swift; sourceTree = "<group>"; };
+		FAC1B33324EB8507001D854A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC1B33824EB8507001D854A /* PikalongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PikalongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC1B33C24EB8507001D854A /* PikalongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikalongUITests.swift; sourceTree = "<group>"; };
+		FAC1B33E24EB8507001D854A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC1B35024EB8778001D854A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		FAC1B35124EB8778001D854A /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		FAC1B35524EB87A2001D854A /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		FAC1B35624EB87A2001D854A /* TopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
+		FB846A8B6DCBCBC605E41093 /* Pods-Pikalong-PikalongUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikalong-PikalongUITests.release.xcconfig"; path = "Target Support Files/Pods-Pikalong-PikalongUITests/Pods-Pikalong-PikalongUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC1B31424EB8504001D854A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD08B2C03320982E0FB4B4D5 /* Pods_Pikalong.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC1B32A24EB8507001D854A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C0C7CCF0C8C12301FA77AB /* Pods_PikalongTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC1B33524EB8507001D854A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E2B224BF733F4B8B47D109 /* Pods_Pikalong_PikalongUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8AE372DB9C008E07FCB196E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C624C68344A1A015061F14A8 /* Pods_Pikalong.framework */,
+				A079A3B17C39FA2ACA5297A4 /* Pods_Pikalong_PikalongUITests.framework */,
+				1B5E1603D46DE9A701B6FEF3 /* Pods_PikalongTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA2D361424EC2891005E0ADA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1B32324EB8506001D854A /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FAC1B30E24EB8504001D854A = {
+			isa = PBXGroup;
+			children = (
+				FAC1B31924EB8504001D854A /* Pikalong */,
+				FAC1B33024EB8507001D854A /* PikalongTests */,
+				FAC1B33B24EB8507001D854A /* PikalongUITests */,
+				FAC1B31824EB8504001D854A /* Products */,
+				FB7B123DDB6FB709D60E8155 /* Pods */,
+				B8AE372DB9C008E07FCB196E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC1B31824EB8504001D854A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1B31724EB8504001D854A /* Pikalong.app */,
+				FAC1B32D24EB8507001D854A /* PikalongTests.xctest */,
+				FAC1B33824EB8507001D854A /* PikalongUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC1B31924EB8504001D854A /* Pikalong */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1B34C24EB8612001D854A /* App */,
+				FAC1B34D24EB8624001D854A /* Resources */,
+				FAC1B34A24EB8601001D854A /* Scenes */,
+			);
+			path = Pikalong;
+			sourceTree = "<group>";
+		};
+		FAC1B33024EB8507001D854A /* PikalongTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1B33124EB8507001D854A /* PikalongTests.swift */,
+				FAC1B33324EB8507001D854A /* Info.plist */,
+			);
+			path = PikalongTests;
+			sourceTree = "<group>";
+		};
+		FAC1B33B24EB8507001D854A /* PikalongUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1B33C24EB8507001D854A /* PikalongUITests.swift */,
+				FAC1B33E24EB8507001D854A /* Info.plist */,
+			);
+			path = PikalongUITests;
+			sourceTree = "<group>";
+		};
+		FAC1B34A24EB8601001D854A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1B34E24EB8632001D854A /* Launch */,
+				FAC1B34F24EB8643001D854A /* Splash */,
+				FAC1B35424EB8798001D854A /* Top */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FAC1B34B24EB860C001D854A /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1B32824EB8507001D854A /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		FAC1B34C24EB8612001D854A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1B31A24EB8504001D854A /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAC1B34D24EB8624001D854A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D361524EC2928005E0ADA /* R.generated.swift */,
+				FA2D361424EC2891005E0ADA /* Images */,
+				FAC1B34B24EB860C001D854A /* Supports */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAC1B34E24EB8632001D854A /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1B32524EB8506001D854A /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		FAC1B34F24EB8643001D854A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1B35024EB8778001D854A /* SplashViewController.swift */,
+				FAC1B35124EB8778001D854A /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		FAC1B35424EB8798001D854A /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1B35524EB87A2001D854A /* TopViewController.swift */,
+				FAC1B35624EB87A2001D854A /* TopViewController.xib */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		FB7B123DDB6FB709D60E8155 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9F8547C18927970870709D9 /* Pods-Pikalong.debug.xcconfig */,
+				EB816A89BE77C28233E1453B /* Pods-Pikalong.release.xcconfig */,
+				85BA31417C875601D0214B5A /* Pods-Pikalong-PikalongUITests.debug.xcconfig */,
+				FB846A8B6DCBCBC605E41093 /* Pods-Pikalong-PikalongUITests.release.xcconfig */,
+				7B7C804FF6314154FD0F2A04 /* Pods-PikalongTests.debug.xcconfig */,
+				8617A7C5DE3360AB297843D7 /* Pods-PikalongTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAC1B31624EB8504001D854A /* Pikalong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC1B34124EB8507001D854A /* Build configuration list for PBXNativeTarget "Pikalong" */;
+			buildPhases = (
+				E5FE533D110AF1BE74A1E884 /* [CP] Check Pods Manifest.lock */,
+				FA2D361324EC2865005E0ADA /* R.Swift */,
+				FA2D361724EC2972005E0ADA /* Swiftlint */,
+				FAC1B31324EB8504001D854A /* Sources */,
+				FAC1B31424EB8504001D854A /* Frameworks */,
+				FAC1B31524EB8504001D854A /* Resources */,
+				5001FB43DF78A814BB47D3BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pikalong;
+			productName = Pikalong;
+			productReference = FAC1B31724EB8504001D854A /* Pikalong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAC1B32C24EB8507001D854A /* PikalongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC1B34424EB8507001D854A /* Build configuration list for PBXNativeTarget "PikalongTests" */;
+			buildPhases = (
+				2B165C329146148A7F928076 /* [CP] Check Pods Manifest.lock */,
+				FAC1B32924EB8507001D854A /* Sources */,
+				FAC1B32A24EB8507001D854A /* Frameworks */,
+				FAC1B32B24EB8507001D854A /* Resources */,
+				987CED25B91761636E78142F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC1B32F24EB8507001D854A /* PBXTargetDependency */,
+			);
+			name = PikalongTests;
+			productName = PikalongTests;
+			productReference = FAC1B32D24EB8507001D854A /* PikalongTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAC1B33724EB8507001D854A /* PikalongUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC1B34724EB8507001D854A /* Build configuration list for PBXNativeTarget "PikalongUITests" */;
+			buildPhases = (
+				6260A6BCCDEE58ED81C320CA /* [CP] Check Pods Manifest.lock */,
+				FAC1B33424EB8507001D854A /* Sources */,
+				FAC1B33524EB8507001D854A /* Frameworks */,
+				FAC1B33624EB8507001D854A /* Resources */,
+				C6E304D726AB0D64200539C1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC1B33A24EB8507001D854A /* PBXTargetDependency */,
+			);
+			name = PikalongUITests;
+			productName = PikalongUITests;
+			productReference = FAC1B33824EB8507001D854A /* PikalongUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC1B30F24EB8504001D854A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					FAC1B31624EB8504001D854A = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					FAC1B32C24EB8507001D854A = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = FAC1B31624EB8504001D854A;
+					};
+					FAC1B33724EB8507001D854A = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = FAC1B31624EB8504001D854A;
+					};
+				};
+			};
+			buildConfigurationList = FAC1B31224EB8504001D854A /* Build configuration list for PBXProject "Pikalong" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAC1B30E24EB8504001D854A;
+			productRefGroup = FAC1B31824EB8504001D854A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC1B31624EB8504001D854A /* Pikalong */,
+				FAC1B32C24EB8507001D854A /* PikalongTests */,
+				FAC1B33724EB8507001D854A /* PikalongUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC1B31524EB8504001D854A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC1B35824EB87A2001D854A /* TopViewController.xib in Resources */,
+				FAC1B32724EB8506001D854A /* LaunchScreen.storyboard in Resources */,
+				FAC1B35324EB8778001D854A /* SplashViewController.xib in Resources */,
+				FAC1B32424EB8506001D854A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC1B32B24EB8507001D854A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC1B33624EB8507001D854A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B165C329146148A7F928076 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PikalongTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5001FB43DF78A814BB47D3BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pikalong/Pods-Pikalong-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pikalong/Pods-Pikalong-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pikalong/Pods-Pikalong-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6260A6BCCDEE58ED81C320CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pikalong-PikalongUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		987CED25B91761636E78142F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PikalongTests/Pods-PikalongTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PikalongTests/Pods-PikalongTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PikalongTests/Pods-PikalongTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E304D726AB0D64200539C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pikalong-PikalongUITests/Pods-Pikalong-PikalongUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pikalong-PikalongUITests/Pods-Pikalong-PikalongUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pikalong-PikalongUITests/Pods-Pikalong-PikalongUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5FE533D110AF1BE74A1E884 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pikalong-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA2D361324EC2865005E0ADA /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		FA2D361724EC2972005E0ADA /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC1B31324EB8504001D854A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC1B35724EB87A2001D854A /* TopViewController.swift in Sources */,
+				FAC1B31B24EB8504001D854A /* AppDelegate.swift in Sources */,
+				FAC1B35224EB8778001D854A /* SplashViewController.swift in Sources */,
+				FA2D361624EC2928005E0ADA /* R.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC1B32924EB8507001D854A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC1B33224EB8507001D854A /* PikalongTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC1B33424EB8507001D854A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC1B33D24EB8507001D854A /* PikalongUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAC1B32F24EB8507001D854A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC1B31624EB8504001D854A /* Pikalong */;
+			targetProxy = FAC1B32E24EB8507001D854A /* PBXContainerItemProxy */;
+		};
+		FAC1B33A24EB8507001D854A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC1B31624EB8504001D854A /* Pikalong */;
+			targetProxy = FAC1B33924EB8507001D854A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAC1B32524EB8506001D854A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC1B32624EB8506001D854A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAC1B33F24EB8507001D854A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAC1B34024EB8507001D854A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAC1B34224EB8507001D854A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F8547C18927970870709D9 /* Pods-Pikalong.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9S83DPATB;
+				INFOPLIST_FILE = "$(SRCROOT)/Pikalong/Resources/Supports/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinhpham.Pikalong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FAC1B34324EB8507001D854A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB816A89BE77C28233E1453B /* Pods-Pikalong.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9S83DPATB;
+				INFOPLIST_FILE = "$(SRCROOT)/Pikalong/Resources/Supports/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinhpham.Pikalong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FAC1B34524EB8507001D854A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B7C804FF6314154FD0F2A04 /* Pods-PikalongTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9S83DPATB;
+				INFOPLIST_FILE = PikalongTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinhpham.PikalongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pikalong.app/Pikalong";
+			};
+			name = Debug;
+		};
+		FAC1B34624EB8507001D854A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8617A7C5DE3360AB297843D7 /* Pods-PikalongTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9S83DPATB;
+				INFOPLIST_FILE = PikalongTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinhpham.PikalongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pikalong.app/Pikalong";
+			};
+			name = Release;
+		};
+		FAC1B34824EB8507001D854A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85BA31417C875601D0214B5A /* Pods-Pikalong-PikalongUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9S83DPATB;
+				INFOPLIST_FILE = PikalongUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinhpham.PikalongUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = Pikalong;
+			};
+			name = Debug;
+		};
+		FAC1B34924EB8507001D854A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB846A8B6DCBCBC605E41093 /* Pods-Pikalong-PikalongUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9S83DPATB;
+				INFOPLIST_FILE = PikalongUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinhpham.PikalongUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = Pikalong;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC1B31224EB8504001D854A /* Build configuration list for PBXProject "Pikalong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC1B33F24EB8507001D854A /* Debug */,
+				FAC1B34024EB8507001D854A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC1B34124EB8507001D854A /* Build configuration list for PBXNativeTarget "Pikalong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC1B34224EB8507001D854A /* Debug */,
+				FAC1B34324EB8507001D854A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC1B34424EB8507001D854A /* Build configuration list for PBXNativeTarget "PikalongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC1B34524EB8507001D854A /* Debug */,
+				FAC1B34624EB8507001D854A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC1B34724EB8507001D854A /* Build configuration list for PBXNativeTarget "PikalongUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC1B34824EB8507001D854A /* Debug */,
+				FAC1B34924EB8507001D854A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAC1B30F24EB8504001D854A /* Project object */;
+}

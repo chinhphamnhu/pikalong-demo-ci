@@ -1,13 +1,13 @@
 //
-//  DemoFastlaneUITests.swift
-//  DemoFastlaneUITests
+//  PikalongUITests.swift
+//  PikalongUITests
 //
 //  Created by Chinh Pham N. on 8/18/20.
 //
 
 import XCTest
 
-class DemoFastlaneUITests: XCTestCase {
+class PikalongUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -29,14 +29,5 @@ class DemoFastlaneUITests: XCTestCase {
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
     }
 }

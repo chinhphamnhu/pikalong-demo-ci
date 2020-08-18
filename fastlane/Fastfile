@@ -1,0 +1,151 @@
+default_platform(:ios)
+
+# Common
+# app-store, ad-hoc, package, enterprise, development, developer-id
+EXPORT_METHOD = "development"
+
+# Define Scheme
+SCHEME_DEV = "Pikalong-DEV"
+SCHEME_STG = "Pikalong-STG"
+SCHEME_PROD = "Pikalong"
+
+# Define Bundle ID
+BUNDLE_DEV = "com.pikalong.dev.native"
+BUNDLE_STG = "com.pikalong.native"
+BUNDLE_PROD = "com.pikalong.native"
+
+# Define Environment
+ENV_DEV = "Debug"
+ENV_STG = "Staging"
+ENV_PROD = "Release"
+
+platform :ios do
+    #
+    # Menu
+    #
+
+    # 0. Unit Test
+    desc "Run all unit test with Dev environment"
+    lane :test do
+      scan(
+        scheme: SCHEME_PROD,
+        devices: ["iPhone 8"],
+        clean: true,
+        skip_build: true
+      )
+    end
+
+    # 1. Dev
+    desc "Dev: Deploy DEV Environment with internal server for Testers"
+    lane :deploy_dev do
+        make_build_folder
+        build_app_with(
+            scheme: SCHEME_DEV,
+            configuration: ENV_DEV,
+            bundle: BUNDLE_DEV,
+            provisioning: "PikalongNative_InHouse_20200818"
+        )
+        create_release_notes(format: "Pikalong [DEV]: %h %s")
+        # TODO: - Upload to Deploygate or Crashlytics
+        cache_artifact_file(
+            bundle_id: BUNDLE_DEV,
+            configuration: ENV_DEV
+        )
+    end
+
+    # 2. Staging
+    desc "Staging: Deploy STG Environment for Client and Internal Testing"
+    lane :deploy_staging do
+        make_build_folder
+        build_app_with(
+            scheme: SCHEME_STG,
+            configuration: ENV_STG,
+            bundle: BUNDLE_STG,
+            provisioning: "PikalongNative_Adhoc_20200818"
+        )
+        create_release_notes(format: "Pikalong [STG]: %h %s")
+        # TODO: - Upload to Deploygate or Crashlytics
+        cache_artifact_file(
+            bundle_id: BUNDLE_STG,
+            configuration: ENV_STG
+        )
+    end
+
+    # 3. AppStore
+    desc "AppStore: Deploy AppStore Environment for end user"
+    lane :deploy_appstore do
+        make_build_folder
+        build_app_with(
+            scheme: SCHEME_PROD,
+            configuration: ENV_PROD,
+            bundle: BUNDLE_PROD,
+            provisioning: "Pikalong_Distribution",
+            exportmethod: "app-store"
+        )
+        create_release_notes(format: "AppStore: %h %s")
+        # TODO: - Upload to Deploygate or Crashlytics
+        cache_artifact_file(
+            bundle_id: BUNDLE_PROD,
+            configuration: ENV_PROD
+        )
+    end
+
+    #
+    # Define Private Functions
+    #
+    desc "Make `build` Folder"
+    private_lane :make_build_folder do
+        sh "rm -rf ../build"
+        sh "mkdir -p ../build"
+    end
+
+    #
+    # Create Release Notes
+    #
+    desc "Create Release Notes"
+    private_lane :create_release_notes do |options|
+        sh "git log -1 --pretty=tformat:\"#{options[:format]}\" > release_notes.txt"
+    end
+
+    #
+    # Build App With Options
+    #
+    desc "Build app with options"
+    private_lane :build_app_with do |options|
+        @export_method = EXPORT_METHOD
+        if (!"#{options[:exportmethod]}".to_s.empty?)
+            @export_method = "#{options[:exportmethod]}"
+        end
+        sh "echo #{@export_method}"
+        build_app(
+            scheme: "#{options[:scheme]}",
+            configuration: "#{options[:configuration]}",
+            clean: true,
+            output_name: "#{SCHEME_PROD}.ipa",
+            include_bitcode: false,
+            skip_profile_detection: true,
+            export_method: "#{@export_method}",
+            # export_options: {
+            #   provisioningProfiles: { "#{options[:bundle]}": "#{options[:provisioning]}" }
+            # }
+        )
+    end
+
+    #
+    # Cache File For Artifacts
+    #
+    desc "Cache file for Artifacts"
+    private_lane :cache_artifact_file do |options|
+      @ios_app_version = get_version_number(xcodeproj: "#{SCHEME_PROD}.xcodeproj", target: "#{SCHEME_PROD}", configuration: "#{options[:configuration]}")
+      @output_name = "#{SCHEME_PROD}-#{options[:bundle_id]}-#{@ios_app_version} " + Time.now.strftime("%Y-%m-%d %H-%M-%S")
+      File.open('./release_notes.txt').each do |line|
+          @releasenote = line
+          break
+      end
+      sh "mv ./release_notes.txt \"../build/release_notes.txt\""
+      sh "mv ../#{SCHEME_PROD}.ipa \"../build/#{@output_name}.ipa\""
+      if (!"../#{SCHEME_PROD}.app.dSYM.zip")
+        sh "mv ../#{SCHEME_PROD}.app.dSYM.zip \"../build/#{@output_name}.app.dSYM.zip\""
+      end
+    end
+end
