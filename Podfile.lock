@@ -68,7 +68,7 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  trunk:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireNetworkActivityIndicator
     - AsyncSwift
@@ -100,4 +100,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 2171594e5d1f99d160e88dbd324e82fb925d4de6
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.5.3
