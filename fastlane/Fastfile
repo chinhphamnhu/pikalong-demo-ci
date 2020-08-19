@@ -11,7 +11,7 @@ SCHEME_PROD = "Pikalong"
 
 # Define Bundle ID
 BUNDLE_DEV = "com.pikalong.dev.native"
-BUNDLE_STG = "com.pikalong.native"
+BUNDLE_STG = "com.pikalong.stg.native"
 BUNDLE_PROD = "com.pikalong.native"
 
 # Define Environment
@@ -43,7 +43,7 @@ platform :ios do
             scheme: SCHEME_DEV,
             configuration: ENV_DEV,
             bundle: BUNDLE_DEV,
-            provisioning: "PikalongNative_InHouse_20200818"
+            # provisioning: "PikalongNative_InHouse_20200818"
         )
         create_release_notes(format: "Pikalong [DEV]: %h %s")
         # TODO: - Upload to Deploygate or Crashlytics
