@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,11 +41,17 @@
 
 /* Begin PBXFileReference section */
 		1B5E1603D46DE9A701B6FEF3 /* Pods_PikalongTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PikalongTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5BC82BBCFFA4F1203DE2DF /* Pods-PikalongTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PikalongTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PikalongTests/Pods-PikalongTests.release.xcconfig"; sourceTree = "<group>"; };
+		4FF0449743258F62E37B6D99 /* Pods-PikalongTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PikalongTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PikalongTests/Pods-PikalongTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DE19100F8DED9D4A68B6946 /* Pods-Pikalong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikalong.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pikalong/Pods-Pikalong.release.xcconfig"; sourceTree = "<group>"; };
 		7B7C804FF6314154FD0F2A04 /* Pods-PikalongTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PikalongTests.debug.xcconfig"; path = "Target Support Files/Pods-PikalongTests/Pods-PikalongTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D6B733B92D1362D52CB78CB /* Pods-Pikalong-PikalongUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikalong-PikalongUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikalong-PikalongUITests/Pods-Pikalong-PikalongUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D93E1EBE2E2E057C50DECC9 /* Pods-Pikalong-PikalongUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikalong-PikalongUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pikalong-PikalongUITests/Pods-Pikalong-PikalongUITests.release.xcconfig"; sourceTree = "<group>"; };
 		85BA31417C875601D0214B5A /* Pods-Pikalong-PikalongUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikalong-PikalongUITests.debug.xcconfig"; path = "Target Support Files/Pods-Pikalong-PikalongUITests/Pods-Pikalong-PikalongUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8617A7C5DE3360AB297843D7 /* Pods-PikalongTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PikalongTests.release.xcconfig"; path = "Target Support Files/Pods-PikalongTests/Pods-PikalongTests.release.xcconfig"; sourceTree = "<group>"; };
 		A079A3B17C39FA2ACA5297A4 /* Pods_Pikalong_PikalongUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikalong_PikalongUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F8547C18927970870709D9 /* Pods-Pikalong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikalong.debug.xcconfig"; path = "Target Support Files/Pods-Pikalong/Pods-Pikalong.debug.xcconfig"; sourceTree = "<group>"; };
+		AD2BC4430089DB6FAD065023 /* Pods-Pikalong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikalong.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pikalong/Pods-Pikalong.debug.xcconfig"; sourceTree = "<group>"; };
 		C624C68344A1A015061F14A8 /* Pods_Pikalong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pikalong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB816A89BE77C28233E1453B /* Pods-Pikalong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pikalong.release.xcconfig"; path = "Target Support Files/Pods-Pikalong/Pods-Pikalong.release.xcconfig"; sourceTree = "<group>"; };
 		FA2D361524EC2928005E0ADA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
@@ -234,6 +240,12 @@
 				FB846A8B6DCBCBC605E41093 /* Pods-Pikalong-PikalongUITests.release.xcconfig */,
 				7B7C804FF6314154FD0F2A04 /* Pods-PikalongTests.debug.xcconfig */,
 				8617A7C5DE3360AB297843D7 /* Pods-PikalongTests.release.xcconfig */,
+				AD2BC4430089DB6FAD065023 /* Pods-Pikalong.debug.xcconfig */,
+				6DE19100F8DED9D4A68B6946 /* Pods-Pikalong.release.xcconfig */,
+				7D6B733B92D1362D52CB78CB /* Pods-Pikalong-PikalongUITests.debug.xcconfig */,
+				7D93E1EBE2E2E057C50DECC9 /* Pods-Pikalong-PikalongUITests.release.xcconfig */,
+				4FF0449743258F62E37B6D99 /* Pods-PikalongTests.debug.xcconfig */,
+				3C5BC82BBCFFA4F1203DE2DF /* Pods-PikalongTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -401,11 +413,9 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pikalong/Pods-Pikalong-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pikalong/Pods-Pikalong-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -440,11 +450,9 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PikalongTests/Pods-PikalongTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PikalongTests/Pods-PikalongTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -457,11 +465,9 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pikalong-PikalongUITests/Pods-Pikalong-PikalongUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pikalong-PikalongUITests/Pods-Pikalong-PikalongUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -587,7 +593,9 @@
 /* Begin XCBuildConfiguration section */
 		FAC1B33F24EB8507001D854A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F8547C18927970870709D9 /* Pods-Pikalong.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -643,12 +651,15 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		FAC1B34024EB8507001D854A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB816A89BE77C28233E1453B /* Pods-Pikalong.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -697,6 +708,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -705,6 +717,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9F8547C18927970870709D9 /* Pods-Pikalong.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -728,6 +741,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EB816A89BE77C28233E1453B /* Pods-Pikalong.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -751,7 +765,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B7C804FF6314154FD0F2A04 /* Pods-PikalongTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9S83DPATB;
@@ -774,7 +788,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8617A7C5DE3360AB297843D7 /* Pods-PikalongTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9S83DPATB;
