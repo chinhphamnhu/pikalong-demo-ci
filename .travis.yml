@@ -1,3 +1,11 @@
+language: objective-c
+osx_image: xcode10.1
+cache:
+  - bundler
+  - cocoapods
+xcode_project: Pikalong.xcworkspace
+xcode_scheme: Pikalong
+xcode_destination: platform=iOS Simulator, OS=12.1, name=iPhone X
 before_install:
     - gem update --system
     - gem install bundler
@@ -5,17 +13,11 @@ before_install:
     - bundle exec pod install --repo-update
     - gem install linterbot
     - brew install swiftlint
-cache:
-  - bundler
-  - cocoapods
-language: objective-c
-osx_image: xcode10.1
-xcode_project: Pikalong.xcworkspace
-xcode_scheme: Pikalong
-xcode_destination: platform=iOS Simulator, OS=12.1, name=iPhone X
 script:
     - ./scripts/lint
     - bundle exec fastlane test
     - bundle exec fastlane deploy_dev
 install:
+    - set -o pipefail
     - sudo systemsetup -settimezone Asia/Ho_Chi_Minh
+    - bundle install --path=vendor/bundle --jobs 4 --retry 3
